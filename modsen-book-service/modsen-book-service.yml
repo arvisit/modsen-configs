@@ -12,6 +12,12 @@ spring:
     deserialization:
       fail-on-unknown-properties: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
+
 logging:
   level:
     root: info
