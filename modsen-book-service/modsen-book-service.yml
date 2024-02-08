@@ -7,10 +7,16 @@ spring:
     hibernate:
       ddl-auto: none
   liquibase:
-    change-log: "db/changelog/changelog.xml"
+    change-log: classpath:db/changelog/changelog.xml
   jackson:
     deserialization:
       fail-on-unknown-properties: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
 
 logging:
   level:
