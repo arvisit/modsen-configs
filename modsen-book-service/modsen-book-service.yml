@@ -11,7 +11,8 @@ spring:
   jackson:
     deserialization:
       fail-on-unknown-properties: true
-  cors:
+  security:
+    cors:
       allowedOrigin: ${CORS_ALLOWED_ORIGIN}
       allowedMethod: ${CORS_ALLOWED_METHOD}
       allowedHeader: ${CORS_ALLOWED_HEADER}

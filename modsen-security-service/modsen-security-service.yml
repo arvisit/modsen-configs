@@ -11,10 +11,11 @@ spring:
   jackson:
     deserialization:
       fail-on-unknown-properties: true
-  jwt:
-    secret: ${JWT_SECRET}
-    expiration: 3600000
-  cors:
+  security:
+    jwt:
+      secret: ${JWT_SECRET}
+      expiration: 3600000
+    cors:
       allowedOrigin: ${CORS_ALLOWED_ORIGIN}
       allowedMethod: ${CORS_ALLOWED_METHOD}
       allowedHeader: ${CORS_ALLOWED_HEADER}
