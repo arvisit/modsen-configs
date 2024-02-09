@@ -1,3 +1,7 @@
+spring:
+  liquibase:
+    contexts: docker
+
 logging:
   level:
     liquibase: info
