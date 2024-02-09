@@ -33,6 +33,3 @@ logging:
 exception:
   handling:
     include: true
-
-server:
-  port: 8081
