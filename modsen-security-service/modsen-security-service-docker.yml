@@ -5,6 +5,6 @@ spring:
 logging:
   level:
     liquibase: info
-    '[by.arvisit.modsenlibapp.bookservice]': debug
+    '[by.arvisit.modsenlibapp.securityservice]': debug
     '[org.springframework.security]': debug
     '[org.springframework.web]': debug

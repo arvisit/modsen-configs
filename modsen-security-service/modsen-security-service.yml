@@ -12,6 +12,9 @@ spring:
     deserialization:
       fail-on-unknown-properties: true
   security:
+    jwt:
+      secret: ${JWT_SECRET}
+      expiration: 3600000
     cors:
       allowedOrigin: ${CORS_ALLOWED_ORIGIN}
       allowedMethod: ${CORS_ALLOWED_METHOD}
@@ -31,9 +34,6 @@ logging:
 exception:
   handling:
     include: true
-security:
-  inner-filter:
-    include: true
 
 server:
-  port: 8081
+  port: 8082
