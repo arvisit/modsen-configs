@@ -35,5 +35,11 @@ exception:
   handling:
     include: true
 
+springdoc:
+  api-docs:
+    path: /modsen-security-service/v3/api-docs
+  swagger-ui:
+    path: /modsen-security-service/swagger-ui.html
+
 server:
   port: 8082
