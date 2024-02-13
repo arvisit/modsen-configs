@@ -1,0 +1,10 @@
+spring:
+  liquibase:
+    contexts: docker
+
+logging:
+  level:
+    liquibase: info
+    '[by.arvisit.modsenlibapp.libraryservice]': debug
+    '[org.springframework.security]': debug
+    '[org.springframework.web]': debug
