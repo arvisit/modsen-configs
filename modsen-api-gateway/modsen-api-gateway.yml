@@ -1,0 +1,27 @@
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: ${CORS_ALLOWED_ORIGIN}
+            allowedMethods: ${CORS_ALLOWED_METHOD}
+            allowedHeaders: ${CORS_ALLOWED_HEADER}
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
+
+logging:
+  level:
+    root: info
+
+server:
+  port: 8080
+  forward-headers-strategy: framework
