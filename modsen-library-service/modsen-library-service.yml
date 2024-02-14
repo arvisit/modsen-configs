@@ -35,5 +35,12 @@ security:
   inner-filter:
     include: true
 
+springdoc:
+  api-docs:
+    path: /modsen-library-service/v3/api-docs
+  swagger-ui:
+    path: /modsen-library-service/swagger-ui.html
+
 server:
   port: 8083
+  forward-headers-strategy: framework

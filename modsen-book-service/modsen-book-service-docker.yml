@@ -2,6 +2,10 @@ spring:
   liquibase:
     contexts: docker
 
+springdoc:
+  swagger-ui:
+    enabled: true
+
 logging:
   level:
     liquibase: info
